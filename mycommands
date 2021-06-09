@@ -1,0 +1,451 @@
+    1  passwd
+    2  ls
+    3  ls-l
+    4  ls-la
+    5  ls -l
+    6  ls -la
+    7  cd /
+    8  ls
+    9  cd home
+   10  ls
+   11  cd /user
+   12  cd /usr
+   13  ls
+   14  cd ../home/yhseo
+   15  cd ../home/info2038034
+   16  cd ../home/info2038024
+   17  pwd
+   18  ls
+   19  pwd
+   20  cd ..
+   21  ls
+   22  cd ..
+   23  ls
+   24  pwd
+   25  cat > testfile
+   26  cat testfile
+   27  ls -l
+   28  cat>memo
+   29  ls -l
+   30  chmod 600 testfile
+   31  ls -l
+   32  chmod 664 testfile
+   33  ls -l
+   34  chmod g-w memo
+   35  ls -l
+   36  chmod o-r testfile
+   37  ls -l
+   38  chmod 600 memo
+   39  ls -l
+   40  $ vi helloWorld.c
+   41  i
+   42  vi helloWorld.c i
+   43  cat helloWorld.c
+   44  cc helloWorld.c
+   45  ./a.out
+   46  ls
+   47  cat helloWorld.c
+   48  cc -o helloWorld helloWorld.c
+   49  ./helloWorld
+   50  ls
+   51  mkdir project1 project2
+   52  ls
+   53  cp helloWorld.c copuHW.c
+   54  cat copuHW.c
+   55  helloWorld.c copuHW.c src
+   56  ls
+   57  cp helloWorld.c copuHW.c src
+   58  mkdir
+   59  ls
+   60  mkdir src
+   61  ls
+   62  cp helloWorld.c copuHW.c src
+   63  ls src
+   64  ls
+   65  mv cupuHW.c copyHW.c
+   66  mv copuHW.c copyHW.c
+   67  ls
+   68  mv memo testfile projenct1
+   69  ls src
+   70  mv memo testfile src
+   71  ls src
+   72  more /etc/passwd
+   73  ls
+   74  rm a.out
+   75  ls
+   76  rm -i *
+   77  ls
+   78  rmdir src
+   79  ls project2
+   80  rmdir project2
+   81  ls
+   82  cat helloWord
+   83  cat helloworld
+   84  cat helloWorld
+   85  PuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTYPuTTY
+   86  ls
+   87  cat > memo
+   88  ls
+   89  wc -l memo
+   90  wc -c memo
+   91  wc -w memo
+   92  date
+   93  du src
+   94  du project1
+   95  du src -a
+   96  who
+   97  ls
+   98  cat sum.c
+   99  cat > sum.c
+  100  ls
+  101  cat sum.c
+  102  cc -o sum sum.c
+  103  cc sum sum.c
+  104  ls
+  105  vi sum.c
+  106  cat sum.c
+  107  cc -o sum sum.c
+  108  vi sum.c
+  109  cat sum.c
+  110  cc -o sum sum.c
+  111  ./sum
+  112  vi sum
+  113  vi sum.c
+  114  cat sum.c
+  115  cc -o sum sum.c
+  116  ./sum
+  117  cat > data
+  118  cat data
+  119  ./sum < data
+  120  ./sum > sumresult
+  121  cat sumresult
+  122  ./sum < data > sumresult
+  123  cat sumresult
+  124  man ls
+  125  whatis ls
+  126  whatis cp
+  127  man ls
+  128  ls
+  129  ls m???
+  130  ls [h]*
+  131  ls *
+  132  ls
+  133  ls {h,m,su}
+  134  ls{h,m}
+  135  ls {h,m}
+  136  ls {d,he}
+  137  ls {d}
+  138  ls {d,he}*
+  139  ls [a-fm]*
+  140  cat > f1
+  141  ls
+  142  cat > f2
+  143  cat > f3
+  144  ls
+  145  ls f*
+  146  rm f*
+  147  ls
+  148  ls-l
+  149  ls -l
+  150  cat > f1
+  151  ls -l
+  152  umask 066
+  153  cp f1 f2
+  154  ls -l
+  155  umask 022
+  156  cp f1 f3
+  157  ls -l
+  158  umask 066
+  159  cp f1 f4
+  160  ls -l
+  161  umask 022
+  162  cp f1 f5
+  163  ls -l
+  164  rm {f4,f5}
+  165  ls -l
+  166  ls -s f1 f4
+  167  ln -s f1 f4
+  168  ls -l
+  169  cd ..
+  170  find . -name f?
+  171  -bash: lsh: command not found
+  172  [info2038024@nlp ~]$ ls {h,m}
+  173  ls: cannot access h: 그런 파일이나 디렉터리가 없습니다
+  174  ls: cannot access m: 그런 파일이나 디렉터리가 없습니다
+  175  [info2038024@nlp ~]$ ls {d,he}
+  176  ls: cannot access d: 그런 파일이나 디렉터리가 없습니다
+  177  ls: cannot access he: 그런 파일이나 디렉터리가 없습니다
+  178  [info2038024@nlp ~]$ ls {d}
+  179  ls: cannot access {d}: 그런 파일이나 디렉터리가 없습니다
+  180  [info2038024@nlp ~]$ ls {d,he}*
+  181  data  helloWorld  helloWorld.c
+  182  [info2038024@nlp ~]$ ls [a-fm]*
+  183  copyHW.c  data  memo
+  184  [info2038024@nlp ~]$ cat > f1
+  185  f1
+  186  [info2038024@nlp ~]$ ls
+  187  copyHW.c  data  f1  helloWorld  helloWorld.c  memo  project1  src  sum  sum.c  sumresult
+  188  [info2038024@nlp ~]$ cat > f2
+  189  f2
+  190  [info2038024@nlp ~]$ cat > f3
+  191  f3
+  192  [info2038024@nlp ~]$ ls
+  193  copyHW.c  data  f1  f2  f3  helloWorld  helloWorld.c  memo  project1  src  sum  sum.c  sumresult
+  194  [info2038024@nlp ~]$ ls f*
+  195  f1  f2  f3
+  196  [info2038024@nlp ~]$ rm f*
+  197  [info2038024@nlp ~]$ ls
+  198  copyHW.c  data  helloWorld  helloWorld.c  memo  project1  src  sum  sum.c  sumresult
+  199  [info2038024@nlp ~]$ ls-l
+  200  -bash: ls-l: command not found
+  201  [info2038024@nlp ~]$ ls -l
+  202  합계 48
+  203  -rw-rw-r--. 1 info2038024 info2038024   66 2021-03-20 18:22 copyHW.c
+  204  -rw-rw-r--. 1 info2038024 info2038024    4 2021-03-20 22:37 data
+  205  -rwxrwxr-x. 1 info2038024 info2038024 6717 2021-03-18 00:38 helloWorld
+  206  -rw-rw-r--. 1 info2038024 info2038024   66 2021-03-18 00:31 helloWorld.c
+  207  -rw-rw-r--. 1 info2038024 info2038024   36 2021-03-20 21:09 memo
+  208  drwxrwxr-x. 2 info2038024 info2038024 4096 2021-03-20 18:18 project1
+  209  drwxrwxr-x. 2 info2038024 info2038024 4096 2021-03-20 20:06 src
+  210  -rwxrwxr-x. 1 info2038024 info2038024 6994 2021-03-20 22:36 sum
+  211  -rw-rw-r--. 1 info2038024 info2038024  162 2021-03-20 22:35 sum.c
+  212  -rw-rw-r--. 1 info2038024 info2038024   21 2021-03-20 22:38 sumresult
+  213  [info2038024@nlp ~]$ cat > f1
+  214  file one
+  215  [info2038024@nlp ~]$ ls -l
+  216  합계 52
+  217  -rw-rw-r--. 1 info2038024 info2038024   66 2021-03-20 18:22 copyHW.c
+  218  -rw-rw-r--. 1 info2038024 info2038024    4 2021-03-20 22:37 data
+  219  -rw-rw-r--. 1 info2038024 info2038024    9 2021-04-10 22:54 f1
+  220  -rwxrwxr-x. 1 info2038024 info2038024 6717 2021-03-18 00:38 helloWorld
+  221  -rw-rw-r--. 1 info2038024 info2038024   66 2021-03-18 00:31 helloWorld.c
+  222  -rw-rw-r--. 1 info2038024 info2038024   36 2021-03-20 21:09 memo
+  223  drwxrwxr-x. 2 info2038024 info2038024 4096 2021-03-20 18:18 project1
+  224  drwxrwxr-x. 2 info2038024 info2038024 4096 2021-03-20 20:06 src
+  225  -rwxrwxr-x. 1 info2038024 info2038024 6994 2021-03-20 22:36 sum
+  226  -rw-rw-r--. 1 info2038024 info2038024  162 2021-03-20 22:35 sum.c
+  227  -rw-rw-r--. 1 info2038024 info2038024   21 2021-03-20 22:38 sumresult
+  228  [info2038024@nlp ~]$ umask 066
+  229  [info2038024@nlp ~]$ cp f1 f2
+  230  [info2038024@nlp ~]$ ls -l
+  231  합계 56
+  232  -rw-rw-r--. 1 info2038024 info2038024   66 2021-03-20 18:22 copyHW.c
+  233  history
+  234  clear
+  235  history
+  236  ls
+  237  pwd
+  238  cd info2038024
+  239  ls
+  240  alias ll 'ls -l'
+  241  ll
+  242  clear
+  243  who
+  244  whoami
+  245  echo my name is park jung hun
+  246  ls
+  247  vi selectionsort.c i
+  248  ls
+  249  cc -o selectionsort selectionsort.c
+  250  gcc -o selectionsort selectionsort.c
+  251  cc -O selectionsort.c selectionsort
+  252  clear
+  253  ls
+  254  gcc -o selectionsort selectionsort.c
+  255  ls
+  256  ./selectionsort.c
+  257  ls -l
+  258  & vi bubblesort.c
+  259  clear
+  260  vi bubblesort.c
+  261  ls
+  262  cc -o bubble bubblesort.c
+  263  vi insertionsort.c
+  264  cc -O insertion insertionsort.c
+  265  vi quicksort.c
+  266  cc -o quick quicksort.c
+  267  ls
+  268  vi heapsort.c
+  269  cc -o heap heapsort.c
+  270  vi 
+  271  ls
+  272  vi infixtopostfix
+  273  ls
+  274  rm infixtopostfix
+  275  ls
+  276  vi infix_to_postfix.c
+  277  rm infix_to_postfix.c
+  278  ls
+  279  vi infix_to_postfix.c
+  280  vi list_insertsort.c
+  281  ls
+  282  vi dijkstra.c
+  283  ls
+  284  vi argument.c
+  285  cc argument.c
+  286  ls
+  287  vi argument.c
+  288  cc argument.c
+  289  ls
+  290  vi argument.c
+  291  cc argument.c
+  292  vi argument.c
+  293  cc argument.c
+  294  3
+  295  memo
+  296  ls
+  297  ./a.out
+  298  mv a.out argument
+  299  ls
+  300  vi cat2.c
+  301  cc -o cat2 cat2.c
+  302  cc cat2.c
+  303  ls
+  304  cc cat2.c
+  305  vi cat2.c
+  306  cat cat2.c
+  307  gcc cat2.c
+  308  cc cat2.c
+  309  vi catw.c
+  310  rm catw.c
+  311  ls
+  312  vi cat2.c
+  313  cc cat2.c
+  314  vi cat2/c
+  315  rm cat2/c
+  316  vi cat2.c
+  317  cc cat2.c
+  318  vi cat2.c
+  319  cc cat2.c
+  320  ls
+  321  ./a.out
+  322  vi cat2.c
+  323  rm a.out
+  324  cc -o cat2 cat2.c
+  325  vi cat2.c
+  326  cc -o cat2 cat2.c
+  327  vi cat2.c
+  328  cc -o cat2 cat2.c
+  329  ./cat2
+  330  vi fileordir.c
+  331  cc -o fileordir fileordir.c
+  332  vi fileofdir
+  333  vi fileordir
+  334  ls
+  335  vi fileordir.c
+  336  cc fileordir.c
+  337  ./a.out
+  338  ls
+  339  mv a.out FileOrDir
+  340  ls
+  341  mkdir 2week
+  342  ls
+  343  mv memo 2week
+  344  ls
+  345  mv helloworld 2week
+  346  mv helloworld.c 2week
+  347  mkdir 3week
+  348  mkdir 4week
+  349  mkdir 5week
+  350  mkdir 6week
+  351  ls
+  352  mv infix_to_postfix.c 5week
+  353  mv list_insertionsort.c 5week
+  354  mv list_insertsort.c 5week
+  355  mv dijkstra.c 5week
+  356  ls
+  357  mv f1 f2 f3 f4 4week
+  358  ls
+  359  mv selectionsort.c 4week
+  360  ls
+  361  mv bubblesort.c 4week
+  362  mv insertionsort.c 4week
+  363  ls
+  364  mv src 3week
+  365  ls
+  366  mv sum.c sum 3week
+  367  ls
+  368  mv data 3week
+  369  ls
+  370  mv sumresult 3week
+  371  ls
+  372  mv project1 3week
+  373  ls
+  374  mv helloWorld helloWorld.c 2week
+  375  ls
+  376  mv heapsort.c 5week
+  377  ls
+  378  mv argument argument.c cat2 cat2.c 6week
+  379  ls
+  380  mv FileOrDir fileordir.c 6week
+  381  ls
+  382  mv copyHW.c 3week
+  383  ls
+  384  ls -i
+  385  ls
+  386  mkdir midexam
+  387  ls
+  388  ls -l
+  389  chmod g-w midexame
+  390  chmod g-w midexam
+  391  ls-l
+  392  ls -l
+  393  chmod 600 midexam
+  394  ls -l
+  395  chmod 700 midexam
+  396  ls 0l
+  397  ls -l
+  398  cd ../home/info2038024/midexam
+  399  pwd
+  400  cd /home/info2038024/midexam
+  401  pwd
+  402  vi indata
+  403  vi Fibonacci.c
+  404  ls
+  405  mv Fibonacci.c fibo.c
+  406  ls
+  407  cc -0 fibo fibo.c
+  408  cc fibo.c
+  409  vi fibo.c
+  410  cc -o fibo fibo.c
+  411  vi fibo.c
+  412  cc fibo.c
+  413  vi fibo.c
+  414  cc fibo.c
+  415  ls
+  416  mv a.out fibo
+  417  ls
+  418  ./fibo
+  419  vi fibo.c
+  420  cc -o fibo fibo.c
+  421  ./fibo
+  422  ./fibo result2
+  423  vi maximin.c
+  424  vi indata
+  425  cc -o maxmin maxmin.c
+  426  ls
+  427  cc maxmin.c
+  428  vi maxmin.c
+  429  ls
+  430  mv maximin.c maxmin.c
+  431  vi maxmin.c
+  432  cc maxmin.c
+  433  vi msxmin.c
+  434  vi maxmin.c
+  435  cc -o maxmin maxmin.c
+  436  ls
+  437  ./maxmin
+  438  vi wc2.c
+  439  ls
+  440  cd /home/info2038024/midexam
+  441  ls
+  442  vi wc2.c
+  443  ls
+  444  history > mycommands
+  445  ls
+  446  vi wc2.c
+  447  ls
+  448  history > mycommands
+  449  ls
+  450  rm mycommands
+  451  history > mycommands
